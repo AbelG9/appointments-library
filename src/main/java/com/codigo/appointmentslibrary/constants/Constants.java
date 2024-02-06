@@ -20,6 +20,7 @@ public class Constants {
     public static final String MESSAGE_ERROR_USER_NOT_VALID="Error: El usuario no existe";
     public static final String MESSAGE_ERROR_NON_DATA="No existe Datos para ID";
     public static final String MESSAGE_ERROR_DATA_NOT_VALID="Error: Durante las validaciones de los Datos";
+    public static final String MESSAGE_ERROR_APPOINTMENT_EXISTS="Error: Ya existe una cita creada para el usuario";
     public static final String MESSAGE_ZERO_ROWS="No existe Registros en la Base de Datos";
     public static final String MESSAGE_ERROR_NOT_UPDATE_PERSONS ="Error: No se ejecuto la actualización, Persona no Existe";
     public static final String MESSAGE_ERROR_NOT_DELETE_PERSONS ="Error: No se ejecuto el eliminado, Persona no Existe";
