@@ -1,6 +1,9 @@
 package com.codigo.appointmentslibrary.config;
 
+import com.codigo.appointmentslibrary.constants.Constants;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
@@ -13,9 +16,9 @@ public class RedisService {
         this.stringRedisTemplate = stringRedisTemplate;
     }
 
-    public void saveInCache(String key, String value, int exp) {
+    public void saveInCache(String key, String value) {
         stringRedisTemplate.opsForValue().set(key, value);
-        stringRedisTemplate.expire(key,exp, TimeUnit.MINUTES);
+        stringRedisTemplate.expire(key, Constants.TIME_EXPIRATION_REDIS, TimeUnit.MINUTES);
     }
 
     public String getValueFromCache(String key) {

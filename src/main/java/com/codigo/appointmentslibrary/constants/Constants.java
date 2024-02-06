@@ -14,6 +14,10 @@ public class Constants {
     public static final String MESSAGE_ERROR="Error en la Ejecución";
 
     //DATA
+    public static final String MESSAGE_USER_CREATED="Usuario creado exitosamente";
+    public static final String MESSAGE_ERROR_USER_NOT_CREATED="Error: No se ejecutó la creación de usuario";
+    public static final String MESSAGE_ERROR_USER_INACTIVE="Error: El usuario no se encuentra habilitado";
+    public static final String MESSAGE_ERROR_USER_NOT_VALID="Error: El usuario no existe";
     public static final String MESSAGE_ERROR_NON_DATA="No existe Datos para ID";
     public static final String MESSAGE_ERROR_DATA_NOT_VALID="Error: Durante las validaciones de los Datos";
     public static final String MESSAGE_ZERO_ROWS="No existe Registros en la Base de Datos";
@@ -33,11 +37,19 @@ public class Constants {
 
     //AUDIT
     public static final String AUDIT_ADMIN="ADMIN";
-
-    //  REDISKEY
-    public static final String REDIS_KEY_INFO_RENIEC="MS:REGISTER:INFORENIEC:";
+    public static final String ROLE_USER = "user";
 
     //STATIC VALUES
     public static final String COD_TYPE_RUC = "06";
     public static final String COD_TYPE_DNI = "01";
+
+    //REDISKEY
+    public static final String REDIS_KEY_INFO_RENIEC="MS:REGISTER:INFORENIEC:";
+    public static final String REDIS_KEY_INFO_SPECIALTIES="MS:CLINIC:SPECIALTY:";
+    public static final String REDIS_KEY_INFO_SPECIALISTS="MS:CLINIC:SPECIALIST:";
+    public static final String REDIS_KEY_INFO_PERSONS="MS:CLINIC:PERSON:";
+    public static final String REDIS_KEY_INFO_PERSONS_BY_DOC="MS:CLINIC:PERSON_BY_DOC:";
+    public static final String REDIS_KEY_INFO_APPOINTMENTS="MS:CLINIC:APPOINTMENT:";
+
+    public static final Integer TIME_EXPIRATION_REDIS=5;
 }
